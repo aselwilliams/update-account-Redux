@@ -10,7 +10,7 @@ import {
     ScheduleOutlined,
     Settings,
     ShoppingBasketOutlined,
-  } from "@material-ui/icons";
+  } from "@mui/icons-material";
   import React from "react";
   import MenuLink from "../menulink/MenuLink";
   import "./leftbar.css";
