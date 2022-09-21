@@ -8,9 +8,9 @@ export default function MenuLink({ icon, text }) {
     <div className="menulink">
       {icon}
       <span className="menuLinkText">{text}</span>
-      <span className="menuLinkTextName">
-        {text === "Logout" && `(${name} )`}
-      </span>
+      {name && <span className="menuLinkTextName">
+        {text === "Logout" && `(${ name} )`}
+      </span>}
     </div>
   );
 }
