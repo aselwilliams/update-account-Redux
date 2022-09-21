@@ -3,10 +3,10 @@ import { useSelector } from "react-redux";
 import "./recommendation.css";
 
 export default function Recommendation({ type }) {
-  const name = useSelector ((state)=>state.user.name)
+  const name = useSelector ((state)=>state.user.userInfo.name)
   const title =
     type === "user"
-      ? `Reccomended for ${name}`
+      ? `Recommended for ${name}`
       : type === "popular"
       ? "Popular on Dado App"
       : "Editor's choice";
