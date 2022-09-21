@@ -8,7 +8,14 @@ export const userSlice = createSlice({
     },
     reducers: {
         update: (state, action) => {
-            
+            state.name= action.payload.name;
+            state.email=action.payload.email;
+        },
+        remove: (state) => {
+            state= null;
         }
-    }
+    },
 })
+
+export const {update, remove } = userSlice.actions;
+export default userSlice.reducer;
